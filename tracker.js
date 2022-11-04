@@ -80,7 +80,7 @@ for (i = 0; i < characterNames.length; i++) {
               postDate.includes(",") ? (postDate = postDate.substring(0, postDate.indexOf(","))) : null;
     
               if (closedForums.includes(forum)) {
-                closedThreadDiv.append($(`<div class="thread"><span class="closed">o</span> <a href="${threadUrl}">${title}</a><br/> <div class="threaddec">${threadDesc}</div></div>`));
+                closedThreadDiv.append($(`<div class="thread"><span class="closed">o</span> <a href="${threadUrl}">${title}</a><br/> <div class="threaddesc">${threadDesc}</div></div>`));
               } else if (myTurn == "owed") {
                 owedThreadDiv.append($(`<div class="thread"><span class="${myTurn}">-</span> <a href="${threadUrl}">${title}</a><br/> <div class="threaddesc">${threadDesc}</div> <div class="date">Last post by ${lastPoster} on ${postDate}</div></div>`));
               } else {
